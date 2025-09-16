@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> My AI490 Site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Milwaukee Bucks | My AI490 Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bucks-green: #00471B;
+            --bucks-cream: #EEE1C6;
+            --bucks-blue: #0077C0;
+            --bucks-black: #000000;
+            --bucks-white: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            color: var(--bucks-black);
+            background: var(--bucks-cream);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        header.site-header {
+            background: linear-gradient(135deg, var(--bucks-green) 0%, #083d19 60%);
+            color: var(--bucks-cream);
+            padding: 32px 20px;
+            border-bottom: 6px solid var(--bucks-blue);
+            text-align: center;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: center;
+        }
+        .brand h1 {
+            font-family: 'Oswald', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0;
+            font-size: 2.25rem;
+        }
+        .brand span.tagline {
+            display: block;
+            font-size: .95rem;
+            font-weight: 400;
+            opacity: .9;
+            letter-spacing: .5px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 28px auto;
+            padding: 0 20px 40px;
+        }
+
+        .card {
+            background: var(--bucks-white);
+            border: 2px solid var(--bucks-green);
+            border-radius: 10px;
+            box-shadow: 0 6px 0 var(--bucks-blue);
+            padding: 20px;
+        }
+
+        h2 {
+            font-family: 'Oswald', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: var(--bucks-green);
+            margin: 0 0 8px;
+        }
+        p {
+            margin: 0 0 14px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--bucks-green);
+            color: var(--bucks-cream);
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform .1s ease, box-shadow .1s ease, background .2s ease;
+            box-shadow: 0 4px 0 #06351a;
+        }
+        .cta:hover { background: #0a5b25; transform: translateY(-1px); }
+        .cta:active { transform: translateY(0); box-shadow: 0 2px 0 #06351a; }
+
+        footer {
+            text-align: center;
+            color: #2d2d2d;
+            padding: 24px 12px 40px;
+            font-size: .9rem;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 999px;
+            background: var(--bucks-blue);
+            color: var(--bucks-white);
+            font-size: .75rem;
+            letter-spacing: .4px;
+            margin-left: 8px;
+        }
+        .deer { filter: drop-shadow(0 2px 0 #083d19); }
+    </style>
 </head>
 <body>
-    <h1>Hello from my first webpage!</h1>
-    <p>This page will later host my coursework.</p>
+    <header class="site-header">
+        <div class="brand">
+            <span class="deer" aria-hidden="true">🦌</span>
+            <div>
+                <h1>Nicholas Jani</h1>
+                <span class="tagline">My AI490 Site</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Welcome<span class="pill">Fear The Deer</span></h2>
+            <p>Hello from my first webpage! </p>
+            <p>This page will later host my coursework.</p>
+            <a class="cta" href="https://www.linkedin.com/in/nicholas-jani/">View my Linked In</a>
+        </div>
+    </main>
+
+    
+       
+    
 </body>
-<html>
-
-
+</html>
